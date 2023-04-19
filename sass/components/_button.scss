@@ -7,7 +7,9 @@
 		border-radius: 10rem;
 		transition: all 0.2s;
 		position: relative;
-		font-size: 1.6rem;
+		font-size: $default-font-size;
+		//font-weight: 700;
+		padding: 1.5rem 4rem;
 	}
 
 	&:hover {
@@ -27,11 +29,17 @@
 	&--white {
 		background-color: $color-white;
 		color: $color-grey-dark;
-		font-weight: 700;
-		padding: 1.5rem 4rem;
 
 		&::after {
 			background-color: $color-white;
+		}
+	}
+
+	&--green {
+		background-color: $color-primary;
+		color: $color-white;
+		&::after {
+			background-color: $color-primary;
 		}
 	}
 
@@ -57,7 +65,8 @@
 .btn-text {
 	&:link,
 	&:visited {
-		font-size: 1.6rem;
+		font-size: $default-font-size;
+		font-weight: 500;
 		display: inline-block;
 		color: $color-primary;
 		text-decoration: none;

@@ -14,9 +14,11 @@
 		left: 4rem;
 	}
 	&__logo {
-		height: 3.5rem;
+		height: 6rem;
+		transition: all 0.2s;
 		&:hover {
-			animation: moveInRight 1s ease-out;
+			transform: scale(1.1);
+			transform: rotate(180deg);
 		}
 	}
 
