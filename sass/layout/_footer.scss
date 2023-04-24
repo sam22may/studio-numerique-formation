@@ -3,9 +3,17 @@
 	padding: 10rem 0;
 	font-size: 1.4rem;
 
+	@include respondMax($tab-port) {
+		padding: 8rem 0;
+	}
+
 	&__logo-box {
 		margin-bottom: 8rem;
 		text-align: center;
+
+		@include respondMax($phone) {
+			margin-bottom: 6rem;
+		}
 	}
 
 	&__logo {
@@ -17,6 +25,11 @@
 		border-top: 1px solid $color-grey-dark;
 		padding-top: 2rem;
 		display: inline-block;
+
+		@include respondMax($tab-port) {
+			width: 100%;
+			text-align: center;
+		}
 	}
 
 	&__list {
@@ -56,5 +69,9 @@
 
 		width: 80%;
 		float: right;
+		@include respondMax($tab-port) {
+			width: 100%;
+			float: none;
+		}
 	}
 }

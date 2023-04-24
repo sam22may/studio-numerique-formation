@@ -1,8 +1,4 @@
 .navigation {
-	// position: fixed;
-	// top: 6rem;
-	// right: 6rem;
-	// z-index: 100;
 	&__checkbox {
 		display: none;
 	}
@@ -76,6 +72,16 @@
 		// &:hover .navigation__icon--3 {
 		// 	transform: translateY(0.2rem);
 		// }
+
+		@include respondMax($tab-port) {
+			top: 3.5rem;
+			right: 3.5rem;
+		}
+
+		@include respondMax($phone) {
+			top: 2.5rem;
+			right: 2.5rem;
+		}
 	}
 
 	&__background {
@@ -88,8 +94,17 @@
 		right: 5.3rem;
 		background-image: radial-gradient($color-primary-light, $color-primary-dark);
 		z-index: 1000;
-
 		transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+
+		@include respondMax($tab-port) {
+			top: 3.8rem;
+			right: 3.8rem;
+		}
+
+		@include respondMax($phone) {
+			top: 2.8rem;
+			right: 2.8rem;
+		}
 	}
 
 	&__nav {

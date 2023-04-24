@@ -63,7 +63,7 @@
 					<span class="heading-primary--sub">réalisons votre projet web</span>
 				</h1>
 
-				<a href="#" class="btn btn--white btn--animated">Découvrir</a>
+				<a href="#section-tours" class="btn btn--white btn--animated">Découvrir</a>
 			</div>
 		</header>
 
@@ -136,7 +136,9 @@
 				<div class="row">
 					<div class="col-1-of-4">
 						<div class="feature-box">
-							<i class="feature-box__icon icon-basic-world"></i>
+							<div class="feature-box__icon">
+								<i class="icon-basic-world"></i>
+							</div>
 							<h3 class="heading-tertiary u-mb-small">Explore the world</h3>
 							<p class="feature-box__text">
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo deserunt omnis saepe voluptatum!
@@ -145,7 +147,9 @@
 					</div>
 					<div class="col-1-of-4">
 						<div class="feature-box">
-							<i class="feature-box__icon icon-basic-compass"></i>
+							<div class="feature-box__icon">
+								<i class="icon-basic-compass"></i>
+							</div>
 							<h3 class="heading-tertiary u-mb-small">Meet nature</h3>
 							<p class="feature-box__text">
 								Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, cumque sit locuo misepotimun delit.
@@ -154,7 +158,9 @@
 					</div>
 					<div class="col-1-of-4">
 						<div class="feature-box">
-							<i class="feature-box__icon icon-basic-map"></i>
+							<div class="feature-box__icon">
+								<i class="icon-basic-map"></i>
+							</div>
 							<h3 class="heading-tertiary u-mb-small">Find your way</h3>
 							<p class="feature-box__text">
 								Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, facilis unde exercitationem saepe.
@@ -163,7 +169,9 @@
 					</div>
 					<div class="col-1-of-4">
 						<div class="feature-box">
-							<i class="feature-box__icon icon-basic-heart"></i>
+							<div class="feature-box__icon">
+								<i class="icon-basic-heart"></i>
+							</div>
 							<h3 class="heading-tertiary u-mb-small">Live a healthier life</h3>
 							<p class="feature-box__text">
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo deserunt omnis saepe voluptatum!
@@ -173,7 +181,7 @@
 				</div>
 			</section>
 
-			<section class="section-tours">
+			<section class="section-tours" id="section-tours">
 				<div class="u-center-text u-mb-big">
 					<h2 class="heading-secondary">Most popular tours</h2>
 				</div>
@@ -202,7 +210,7 @@
 										<p class="card__price-only">Only</p>
 										<p class="card__price-value">$297</p>
 									</div>
-									<a href="#" class="btn btn--white">Book now!</a>
+									<a href="#popup" class="btn btn--white">Book now!</a>
 								</div>
 							</div>
 						</div>
@@ -230,7 +238,7 @@
 										<p class="card__price-only">Only</p>
 										<p class="card__price-value">$497</p>
 									</div>
-									<a href="#" class="btn btn--white">Book now!</a>
+									<a href="#popup" class="btn btn--white">Book now!</a>
 								</div>
 							</div>
 						</div>
@@ -258,7 +266,7 @@
 										<p class="card__price-only">Only</p>
 										<p class="card__price-value">$897</p>
 									</div>
-									<a href="#" class="btn btn--white">Book now!</a>
+									<a href="#popup" class="btn btn--white">Book now!</a>
 								</div>
 							</div>
 						</div>
@@ -392,5 +400,28 @@
 				</div>
 			</div>
 		</footer>
+
+		<div class="popup" id="popup">
+			<div class="popup__content">
+				<div class="popup__left">
+					<img src="img/nat-8.jpg" alt="Tour photo" class="popup__img" />
+					<img src="img/nat-9.jpg" alt="Tour photo" class="popup__img" />
+				</div>
+				<div class="popup__right">
+					<a href="#section-tours" class="popup__close">&times;</a>
+					<h2 class="heading-secondary u-mb-small">Start booking now</h2>
+					<h3 class="heading-tertiary u-mb-small">Important &ndash; Please read these terms before booking</h3>
+					<p class="popup__text">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae eaque praesentium quibusdam modi in sed
+						aliquam obcaecati distinctio aut. Obcaecati sapiente doloremque animi velit iure sint libero blanditiis
+						reprehenderit dolorum. Lorem ipsum dolor sit amet consectetur adipisicing elit qui la pouta. Lorem ipsum
+						dolor sit, amet consectetur adipisicing elit. Maxime ipsam voluptatibus sed pariatur exercitationem
+						distinctio fugit, odit corporis corrupti modi non ab? Atque, reiciendis vel. Magni tempore eius inventore
+						harum? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima eligendi quo.
+					</p>
+					<a href="#" class="btn btn--green">Book now</a>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
